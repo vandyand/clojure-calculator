@@ -1,0 +1,97 @@
+:root {
+  --theme-dark: rgb(47, 54, 64);
+  --theme-light-blue: rgb(0, 151, 230);
+  --theme-blue: rgb(39, 60, 117);
+  --theme-light: rgb(245, 246, 250);
+  --primary: var(--theme-dark);
+  --primary-light: rgb(53, 59, 72);
+  --secondary: rgb(64, 115, 158);
+  --secondary-light: rgb(72, 126, 176);
+}
+
+.theme-dark {
+  --primary: var(--theme-dark);
+  --primary-light: rgb(53, 59, 72);
+  --secondary: rgb(64, 115, 158);
+  --secondary-light: rgb(72, 126, 176);
+}
+
+.theme-light-blue {
+  --primary: rgb(0, 151, 230);
+  --primary-light: rgb(0, 168, 255);
+  --secondary: rgb(220, 221, 225);
+  --secondary-light: rgb(245, 246, 250);
+}
+
+.theme-blue {
+  --primary: rgb(39, 60, 117);
+  --primary-light: rgb(67, 92, 161);
+  --secondary: rgb(113, 128, 147);
+  --secondary-light: rgb(127, 143, 166);
+}
+
+.theme-light {
+  --primary: var(--theme-light);
+  --primary-light: rgb(236, 237, 241);
+  --secondary: rgb(156, 136, 255);
+  --secondary-light: rgb(140, 122, 230);
+}
+
+.calculator-base {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 50%;
+  max-width: 400px;
+  margin: auto;
+  margin-top: 3%;
+  background-color: var(--primary);
+  border: 8px solid var(--primary);
+  border-radius: 8px;
+}
+
+.calculator-display-bar {
+  background-color: var(--primary);
+  color: var(--secondary);
+  border: 1px solid var(--secondary);
+  border-radius: 0.25em;
+  box-sizing: border-box;
+  width: 100%;
+  padding: 3%;
+  min-height: 38px;
+  text-align: right;
+  word-wrap: break-word;
+  font-size: 200%;
+}
+
+.calculator-row {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  background-color: var(--primary);
+}
+
+.calculator-button {
+  background-color: var(--primary);
+  color: var(--secondary);
+  border: 1px solid var(--secondary);
+  border-radius: 0.25em;
+  padding: 3%;
+  padding-top: 5%;
+  padding-bottom: 5%;
+  width: 25%;
+  font-size: 200%;
+}
+
+.calculator-button:hover {
+  background-color: var(--primary-light);
+  color: var(--secondary-light);
+}
+
+.calculator-button:active {
+  background-color: var(--secondary);
+}
+
+.calculator-button:focus {
+  outline: 0;
+}
