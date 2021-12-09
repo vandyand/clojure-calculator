@@ -29,17 +29,4 @@ clj꞉user꞉>  ; Use `alt+enter` to evaluate
 ;    *Calva: Toggle REPL connection*
 ;    (There is a button in the status bar for this)
 ; Jack-in done.
-klj꞉cljs.user꞉> 
-(seq 1 6)
-; WARNING: Wrong number of args (2) passed to cljs.core/seq at line 1 <cljs repl>
-; #object[Error Error: 1 is not ISeqable]
-cljs꞉cljs.user꞉>  ; Use `alt+enter` to evaluate
-(seq 5)
-; #object[Error Error: 5 is not ISeqable]
-cljs꞉cljs.user꞉> 
-(range 5)
-(0 1 2 3 4)
-cljs꞉cljs.user꞉> 
-(+ 1 1)
-2
-cljs꞉calculator.calculator꞉> 
+clj꞉cljs.user꞉> 
